@@ -1,7 +1,7 @@
 
 # Deniss Patancevs
 
-    E-mail: email@gmail.com
+    E-mail: my_email@gmail.com
     Phone: +371 23658658
 ##### [LinkedIn profile](www.linkedin.com/in/deniss-patancevs-11b30945)
 
@@ -24,6 +24,7 @@
 - PHP: Object-Oriented Programming
 - Introduction to Git and GitHub
 - Building Database Applications in PHP
+- Introduction to Structured Query Language (SQL)
 ---
 ##### _Education:_
 - Riga Technical University
