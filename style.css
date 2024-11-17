@@ -96,9 +96,7 @@ nav a:active {
     margin-left: -20px;
     margin-right: -20px;
 }
-.main-header p {
-  font-size: 24px;
-  font-weight: bold;
+.main-header h3 {
   padding: 10px 20px;
 }
 
