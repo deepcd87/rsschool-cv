@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Deniss Patancevs CV</title>
+</head>
+<body>
+
+<div class="grid-container">
+    <!-- Header -->
+    <div class="grid-header-empty"></div>
+    <div class="grid-header">
+        <header>
+            <nav class="navbar">
+                <a href="#about">About me</a> 
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#trainings">Trainings</a> 
+                <a href="#code">Code</a>
+                <a href="#projects">Projects</a>  
+            </nav>
+        </header> 
+    </div>
+    
+    <!-- Menu Section -->
+    <div class="grid-menu">
+        <img id="avatar" src="my_photo_small.jpg" alt="Deniss Patancevs photo">
+
+        <div class="menu-header" id="contacts">
+        <h3>Contacts</h3>
+        <ul>
+            <li class="menu-contact-header">LinkedIn:</li>
+            <li><a href="https://www.linkedin.com/in/deniss-patancevs-11b30945" target="_blank">my profile</a></li>
+        </ul>
+        <ul>
+            <li class="menu-contact-header">Email:</li>
+            <li><a href="mailto:my_email@gmail.com">deniss@gmail.com</a></li>
+        </ul>
+        <ul>
+            <li class="menu-contact-header">Discord:</li>
+            <li class="menu-contact-text">deepcd</li>
+        </ul>
+        <ul>
+            <li class="menu-contact-header">Address:</li>
+            <li class="menu-contact-text">Riga, Latvia</li>
+        </ul>
+
+        </div>
+
+        <div class="menu-header">
+        <h3>Top Skills</h3>
+        </div>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+        </ul>
+
+        <section>
+            <div class="menu-header" id="languages">
+                <h3>Languages</h3>
+                </div>
+                <ul>
+                    <li>English - B2</li>
+                    <li>Latvian - C1</li>
+                    <li>Russian - C2</li>
+                </ul>
+        </section>
+
+    </div>
+
+    <!-- Main Section-->
+    <div class="grid-main">
+        <main>
+
+        <section>
+            <div>
+                <h1>Deniss Patancevs</h1>
+                <p>Junior Web Developer</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="main-header">
+                <h3>About me</h3>
+            </div>
+
+            <p>
+            I have always been passionate about IT, but it so happened 
+            that I worked in a different field of work until now. But 
+            now that I have decided to try myself in the IT field, 
+            I am actively learning programming languages and various 
+            other web development technologies.
+            </p>
+            I am a person with a high sense of responsibility and 
+            accuracy. I am able to quickly adapt to new situations, 
+            and I am also ready to learn all the necessary knowledge 
+            and skills to successfully perform my work duties.
+            <p>
+        </section>    
+        
+        <section id="skills">
+            <div class="main-header">
+                <h3>Skills</h3>
+            </div>    
+            <ul>
+                <li>Basic web technologies:
+                    <ul><li>HTML, CSS</li></ul>
+                </li>
+                    
+                <li>Programming languages:
+                    <ul><li>PHP (OOP, MVC), JavaScript</li></ul>
+                </li>
+                    
+                <li>Databases:
+                    <ul><li>MySQL, MongoDB</li></ul>
+                </li>
+                    
+                <li>VCS:
+                    <ul><li>Git, GitHub, Bitbucket</li></ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <div class="main-header">
+                <h3>Education</h3>
+            </div>
+            <ul>
+                <li>Riga Technical University (unfinished)</li>
+                <li>Private School of Information System</li>
+                <li>Secondary School No. 72</li>
+            </ul>
+        </section>
+
+        <section id="trainings">
+            <div class="main-header">
+                <h3>Trainings</h3>
+            </div>
+            <ul>
+                <li>JavaScript Foundations Professional Certificate by Mozilla</li>
+                <li>GraphQL Essential Training</li>
+                <li>React.js Essential Training</li>
+                <li>Learning Node.js</li>
+                <li>JavaScript Essential Training</li>
+                <li>PHP: Object-Oriented Programming with Databases</li>
+                <li>PHP: Object-Oriented Programming</li>
+                <li>Introduction to Git and GitHub</li>
+                <li>Building Database Applications in PHP</li>
+                <li>Introduction to Structured Query Language (SQL)</li>
+                <li>Building Web Applications in PHP</li>
+                <li>Programming Foundations with JavaScript, HTML and CSS</li>
+                <li>Java Programming: Solving Problems with Software</li>
+            </ul>    
+        </section>
+
+        <section id="code">
+            <div class="main-header">
+                <h3>Code</h3>
+            </div>
+            <div class="code-example">
+            <pre>
+                <code>
+                * The function is expected to return an INTEGER.
+                * The function accepts 2D_INTEGER_ARRAY arr as parameter.
+                */
+            
+            function diagonalDifference($arr) {
+                // Write your code here
+                $count = 0;
+                $arr1 = [];
+                $arr2 = [];
+                
+                for ($i=0; $i&lt;count($arr); $i++) {
+                    if ( ($x = count($arr[$i])) >= 2) {
+                        $arr1[] = $arr[$i][$count];
+                        $arr2[] = $arr[$i][($x-1)-$count];
+                        $count++;
+                    }
+                }
+                return abs(array_sum($arr1) - array_sum($arr2));
+            }
+            </code>
+        </pre>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="main-header">
+                <h3 >Projects</h3>
+            </div>
+            <div>
+                <a href="http://scandiweb-test.42web.io/" target="_blank">
+                <img src="project_scandiweb.png" alt="Project #1 screenshot" style="width: 200px">
+                </a>
+            </div>
+        </section>
+        </main>
+    </div>  
+
+
+    <div class="grid-footer">
+        <footer>
+            <table id="footer-content">
+                <tr>
+
+                    <td>&copy; 2024</td>
+                    <td>
+                        <a href="https://rs.school/courses/javascript" target="_blank">
+                        <img src="rs-school-logo.svg" alt="rs-school-logo" style="width: 118px" >
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://github.com/deepcd87/rsschool-cv/tree/gh-pages" target="_blank">
+                            <img src="github.webp" alt="rs-school-logo" style="width: 42px">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </div>
+ 
+</div>
+
+</body>
+</html>
